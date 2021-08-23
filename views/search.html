@@ -1,0 +1,30 @@
+{% extends 'default.html' %}
+
+{% block main %}
+    <a href='/'>Home</a><br />
+    
+    <h2>Mongo Results:</h2>
+    <ul>
+    {% if mongoSearch %}
+        {% for result in dbResults %}
+            <li><p>Company: {{ result.company }}</p> 
+            <p>City: {{result.city}}</p>  
+            <p>Position: {{ result.job_opening }}</p>  
+            <p>Contact: {{result.contact}}</p> </li>
+        {% endfor %}
+    {% endif %}
+    </ul>
+
+    <h2>Postgres Results:</h2>
+    <ul>
+    {% if pgSearch %}
+        {% for result in pgResults %}
+            <li><p>Company: {{ result.company }}</p> 
+            <p>City: {{result.city}}</p> 
+            <p>Position: {{ result.job_opening }}</p>  
+            <p>Contact: {{result.contact}}</p> </li>
+        {% endfor %}
+    {% endif %}
+    </ul>
+
+{% endblock %}   

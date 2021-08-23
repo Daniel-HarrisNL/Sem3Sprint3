@@ -1,0 +1,20 @@
+{% extends 'default.html' %}
+
+{% block main %}
+    <a href='/'>Home</a>
+    <a href='/signup'>Signup</a>
+    <a href='/login'>Login</a>
+    <a href='/logout'>Logout</a>
+
+    <form method="POST" action="/search">
+        <input id="search_input" type="text" name="search" placeholder="Search">
+        <select id="select_database" name="database">
+            <option value="mongodb">MongoDB</option>
+            <option value="postgres">Postgres</option>
+            <option value="both">Both</option>
+        </select>
+        <button id="submit_button" type="submit">Submit</button>
+    </form>
+    <output></output>
+{% endblock %}
+

@@ -1,0 +1,10 @@
+{% extends 'default.html' %}
+
+{% block main %}
+    <a href='/'>Home</a><br />
+    <form method="POST" action="/login">
+        <label for="username_login">Username: </label><input name="username_login" type="text" placeholder="Username" />
+        <label for="password_login">Password: </label><input name="password_login" type="password" placeholder="Password" />
+        <button type="submit">Login</button>
+    </form>
+{% endblock %}   

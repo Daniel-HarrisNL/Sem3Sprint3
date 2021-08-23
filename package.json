@@ -1,0 +1,30 @@
+{
+  "name": "sem3sprint3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-HarrisNL/Sem3Sprint3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniel-HarrisNL/Sem3Sprint3/issues"
+  },
+  "homepage": "https://github.com/Daniel-HarrisNL/Sem3Sprint3#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongodb": "^4.1.0",
+    "mongoose": "^5.13.7",
+    "nunjucks": "^3.2.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pg": "^8.7.1"
+  }
+}
